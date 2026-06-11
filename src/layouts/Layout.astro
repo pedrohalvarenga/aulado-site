@@ -1,0 +1,134 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  schema?: object;
+}
+
+const {
+  title,
+  description,
+  canonical = Astro.url.href,
+  ogImage = '/og-default.png',
+  schema,
+} = Astro.props;
+
+const siteUrl = 'https://aulado.com.br';
+const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+
+    <link rel="canonical" href={canonical} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={fullOgImage} />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Aulado" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={fullOgImage} />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Albert+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Schema.org JSON-LD base -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Aulado",
+      "url": siteUrl,
+      "logo": `${siteUrl}/logo.svg`,
+      "contactPoint": { "@type": "ContactPoint", "contactType": "customer support", "email": "oi@aulado.com.br" },
+      "sameAs": ["https://instagram.com/auladoapp"]
+    })} />
+
+    {schema && (
+      <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+    )}
+
+    <style is:global>
+      :root {
+        --caramel: #D98232;
+        --brown: #2B1F14;
+        --cream: #FBF5EC;
+        --sand: #F1E6D6;
+        --green: #2F9E6E;
+        --font-title: 'Bricolage Grotesque', sans-serif;
+        --font-body: 'Albert Sans', sans-serif;
+      }
+
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      html { scroll-behavior: smooth; }
+
+      body {
+        font-family: var(--font-body);
+        background: var(--cream);
+        color: var(--brown);
+        line-height: 1.65;
+        font-size: 1rem;
+      }
+
+      h1, h2, h3, h4 {
+        font-family: var(--font-title);
+        line-height: 1.2;
+        color: var(--brown);
+      }
+
+      a { color: var(--caramel); }
+      a:hover { text-decoration: underline; }
+
+      img { max-width: 100%; height: auto; display: block; }
+
+      .container {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.85rem 2rem;
+        border-radius: 8px;
+        font-family: var(--font-body);
+        font-weight: 600;
+        font-size: 1rem;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        transition: opacity 0.15s, transform 0.1s;
+      }
+      .btn:hover { opacity: 0.88; transform: translateY(-1px); text-decoration: none; }
+      .btn-primary { background: var(--caramel); color: #fff; }
+      .btn-outline { background: transparent; border: 2px solid var(--caramel); color: var(--caramel); }
+
+      @media (max-width: 768px) {
+        body { font-size: 0.95rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,213 @@
+---
+import Layout from './Layout.astro';
+import { getCollection } from 'astro:content';
+
+export interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  slug: string;
+  tags?: string[];
+  readingTime?: number;
+}
+
+const { title, description, pubDate, slug, tags = [], readingTime } = Astro.props;
+const canonical = `https://aulado.com.br/blog/${slug}`;
+
+const allPosts = await getCollection('blog');
+const related = allPosts
+  .filter(p => p.id !== slug && p.data.tags?.some(t => tags.includes(t)))
+  .slice(0, 3);
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "datePublished": pubDate.toISOString(),
+  "author": { "@type": "Organization", "name": "Equipe Aulado" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Aulado",
+    "logo": { "@type": "ImageObject", "url": "https://aulado.com.br/logo.svg" }
+  },
+  "url": canonical
+};
+---
+
+<Layout title={`${title} | Blog Aulado`} description={description} canonical={canonical} schema={schema}>
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="logo" aria-label="Aulado — início">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="36" height="36" rx="8" fill="#D98232"/>
+          <path d="M12 22c0-1.5.8-2.8 2-3.5-.3-.5-.5-1-.5-1.5 0-1.7 1.3-3 3-3s3 1.3 3 3c0 .5-.2 1-.5 1.5 1.2.7 2 2 2 3.5H12z" fill="white"/>
+          <circle cx="13" cy="13" r="1.5" fill="white"/>
+          <circle cx="23" cy="13" r="1.5" fill="white"/>
+          <circle cx="10" cy="17" r="1.5" fill="white"/>
+          <circle cx="26" cy="17" r="1.5" fill="white"/>
+        </svg>
+        <span>Aulado</span>
+      </a>
+      <nav>
+        <a href="/blog">Blog</a>
+        <a href="/#planos">Planos</a>
+        <a href="/#contato" class="btn btn-primary" style="padding:0.5rem 1.2rem;font-size:0.9rem;">Teste grátis</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="post-article">
+      <div class="container">
+        <div class="post-meta">
+          <time datetime={pubDate.toISOString()}>
+            {pubDate.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
+          </time>
+          {readingTime && <span>· {readingTime} min de leitura</span>}
+          <span>· Equipe Aulado</span>
+        </div>
+        <h1>{title}</h1>
+        <p class="post-description">{description}</p>
+
+        <div class="post-content">
+          <slot />
+        </div>
+
+        <div class="post-cta">
+          <div class="cta-box">
+            <p>🐾 Teste a Aulado grátis por 14 dias — sem cartão, sem compromisso.</p>
+            <a href="/#contato" class="btn btn-primary">Começar teste grátis</a>
+          </div>
+        </div>
+
+        {related.length > 0 && (
+          <div class="related-posts">
+            <h2>Posts relacionados</h2>
+            <div class="related-grid">
+              {related.map(post => (
+                <a href={`/blog/${post.id}`} class="related-card">
+                  <span class="related-title">{post.data.title}</span>
+                  <span class="related-desc">{post.data.description}</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© {new Date().getFullYear()} Aulado · <a href="/politica-de-privacidade">Privacidade</a> · <a href="/termos-de-uso">Termos</a> · <a href="mailto:oi@aulado.com.br">oi@aulado.com.br</a></p>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  .site-header {
+    background: var(--brown);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  nav { display: flex; align-items: center; gap: 1.5rem; }
+  nav a { color: #fff; text-decoration: none; font-size: 0.95rem; }
+  nav a:hover { color: var(--caramel); }
+
+  .post-article { padding: 3rem 0 4rem; }
+  .post-meta { color: #666; font-size: 0.9rem; margin-bottom: 1rem; }
+  .post-article h1 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    margin-bottom: 1rem;
+    max-width: 800px;
+  }
+  .post-description {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 700px;
+    margin-bottom: 2.5rem;
+    border-left: 4px solid var(--caramel);
+    padding-left: 1rem;
+  }
+  .post-content {
+    max-width: 720px;
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+  .post-content :global(h2) {
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1rem;
+    color: var(--brown);
+  }
+  .post-content :global(h3) { font-size: 1.2rem; margin: 2rem 0 0.75rem; }
+  .post-content :global(p) { margin-bottom: 1.25rem; }
+  .post-content :global(ul), .post-content :global(ol) {
+    margin: 1rem 0 1.25rem 1.5rem;
+  }
+  .post-content :global(li) { margin-bottom: 0.5rem; }
+  .post-content :global(strong) { color: var(--brown); }
+  .post-content :global(em) { color: #555; }
+  .post-content :global(a) { color: var(--caramel); font-weight: 600; }
+
+  .post-cta { max-width: 720px; margin: 3rem 0; }
+  .cta-box {
+    background: var(--brown);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .cta-box p { font-size: 1.05rem; margin: 0; }
+
+  .related-posts { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--sand); }
+  .related-posts h2 { font-size: 1.4rem; margin-bottom: 1.5rem; }
+  .related-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+  .related-card {
+    display: block;
+    background: var(--sand);
+    border-radius: 10px;
+    padding: 1.25rem;
+    text-decoration: none;
+    transition: transform 0.15s;
+  }
+  .related-card:hover { transform: translateY(-3px); }
+  .related-title { display: block; font-family: var(--font-title); font-weight: 600; color: var(--brown); margin-bottom: 0.5rem; font-size: 0.95rem; }
+  .related-desc { display: block; font-size: 0.85rem; color: #666; }
+
+  .site-footer {
+    background: var(--brown);
+    color: #ccc;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+  }
+  .site-footer a { color: var(--caramel); }
+
+  @media (max-width: 768px) {
+    nav a:not(.btn) { display: none; }
+    .cta-box { flex-direction: column; text-align: center; }
+  }
+</style>

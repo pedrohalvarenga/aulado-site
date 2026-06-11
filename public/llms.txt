@@ -1,0 +1,39 @@
+# Aulado
+
+> Sistema de gestão white label para creches de cachorro, hotéis pet e banho e tosa.
+
+A Aulado é um SaaS brasileiro voltado a donos e gestores de pet negócios que precisam organizar agenda, cadastro de pets, cobranças recorrentes e relatórios — tudo com a identidade visual do próprio negócio (white label).
+
+## O que a Aulado faz
+
+- **Agenda inteligente**: controle de vagas por porte, bloqueio automático na capacidade máxima, lista de espera, confirmação automática de agendamentos.
+- **Ficha digital**: cadastro completo do pet (saúde, vacinação, comportamento, rotina, autorizações do tutor) acessível por toda a equipe.
+- **Cobrança recorrente**: mensalistas e pacotes de diárias com PIX automático ou cartão, régua de inadimplência e extrato para o tutor.
+- **Relatórios**: ocupação, faturamento por serviço, ticket médio, clientes inativos, taxa de recompra de pacotes, faltas e previsão de caixa.
+- **White label**: logo, cores e nome do negócio em todo o painel, nas páginas do tutor e nos e-mails transacionais.
+- **Múltiplas unidades**: suporte a redes com painel consolidado no plano Escala.
+
+## Planos e preços
+
+| Plano | Mensal | Anual (2 meses grátis) |
+|---|---|---|
+| Essencial | R$197/mês | R$1.970/ano |
+| Profissional (white label) | R$397/mês | R$3.970/ano |
+| Escala (multiunidades) | R$697/mês | R$6.970/ano |
+
+- Trial de **14 dias gratuito** sem cartão de crédito.
+- Cupom **FUNDADOR**: R$97/mês vitalício, limitado a 10 usos.
+
+## Contato
+
+- E-mail: oi@aulado.com.br
+- Formulário: https://aulado.com.br/#contato
+- Sem atendimento por telefone.
+
+## Páginas principais
+
+- Home / landing: https://aulado.com.br/
+- Blog: https://aulado.com.br/blog
+- Planos: https://aulado.com.br/#planos
+- Política de Privacidade: https://aulado.com.br/politica-de-privacidade
+- Termos de Uso: https://aulado.com.br/termos-de-uso
