@@ -38,7 +38,7 @@ Hospedagens confirmadas + mensalistas + saldo de pacotes a consumir = quanto do 
 
 ## O problema nunca é querer olhar — é montar
 
-Extrair esses sete números de caderno e planilha consome a noite de domingo, então ninguém extrai. Na Aupi, os sete já estão prontos no painel, atualizados em tempo real, com o relatório de inativos a um clique da mensagem de reativação. [Teste grátis e veja seus números ainda hoje →](/#contato)
+Extrair esses sete números de caderno e planilha consome a noite de domingo, então ninguém extrai. Na Aupipet, os sete já estão prontos no painel, atualizados em tempo real, com o relatório de inativos a um clique da mensagem de reativação. [Teste grátis e veja seus números ainda hoje →](/#contato)
 
 **Perguntas frequentes**
 

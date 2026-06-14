@@ -36,7 +36,7 @@ Estratégia que funciona: reajuste geral anual pequeno (5–10%) é mais fácil 
 
 Empreendedor de creche frequentemente "não se paga" — trabalha 60 horas semanais e contabiliza só o que sobra. Coloque seu salário como custo antes de calcular lucro. Se o negócio só funciona porque você não se remunera, ele não é lucrativo — você virou funcionário do próprio negócio sem carteira assinada.
 
-Na Aupi, o relatório financeiro separa custo por serviço e mostra margem real por linha de negócio — você vê exatamente qual serviço paga as contas e qual só ocupa agenda. [Teste grátis por 14 dias →](/#contato)
+Na Aupipet, o relatório financeiro separa custo por serviço e mostra margem real por linha de negócio — você vê exatamente qual serviço paga as contas e qual só ocupa agenda. [Teste grátis por 14 dias →](/#contato)
 
 **Perguntas frequentes**
 

@@ -44,7 +44,7 @@ Se for anunciar, Google Search (palavras "creche para cachorro + sua cidade") co
 
 Três números que importam: quantas consultas chegam por semana (Google Meu Negócio mostra isso), quantos viram visita ou ligação, quantos viram matrícula. Se consultas chegam mas não viram matrícula, o problema está no atendimento — não no marketing.
 
-Na Aupi, você vê de onde cada novo tutor veio — formulário do site, indicação registrada ou walk-in — e consegue responder "qual canal me traz mais cliente e a que custo". [Teste grátis por 14 dias →](/#contato)
+Na Aupipet, você vê de onde cada novo tutor veio — formulário do site, indicação registrada ou walk-in — e consegue responder "qual canal me traz mais cliente e a que custo". [Teste grátis por 14 dias →](/#contato)
 
 **Perguntas frequentes**
 

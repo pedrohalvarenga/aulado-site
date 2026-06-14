@@ -1,10 +1,10 @@
-# Aupi
+# Aupipet
 
 > Sistema de gestão white label para creches de cachorro, hotéis pet e banho e tosa.
 
-A Aupi é um SaaS brasileiro voltado a donos e gestores de pet negócios que precisam organizar agenda, cadastro de pets, cobranças recorrentes e relatórios — tudo com a identidade visual do próprio negócio (white label).
+A Aupipet é um SaaS brasileiro voltado a donos e gestores de pet negócios que precisam organizar agenda, cadastro de pets, cobranças recorrentes e relatórios — tudo com a identidade visual do próprio negócio (white label).
 
-## O que a Aupi faz
+## O que a Aupipet faz
 
 - **Agenda inteligente**: controle de vagas por porte, bloqueio automático na capacidade máxima, lista de espera, confirmação automática de agendamentos.
 - **Ficha digital**: cadastro completo do pet (saúde, vacinação, comportamento, rotina, autorizações do tutor) acessível por toda a equipe.
@@ -12,7 +12,7 @@ A Aupi é um SaaS brasileiro voltado a donos e gestores de pet negócios que pre
 - **Relatórios**: ocupação, faturamento por serviço, ticket médio, clientes inativos, taxa de recompra de pacotes, faltas e previsão de caixa.
 - **White label**: logo, cores e nome do negócio em todo o painel, nas páginas do tutor e nos e-mails transacionais.
 - **Múltiplas unidades**: suporte a redes com painel consolidado no plano Escala.
-- **Importação automática com IA**: o usuário envia planilhas (Excel/CSV), PDFs ou fotos de fichas e a Aupi lê, organiza e cadastra tutores, pets, vacinas e pacotes sozinha, sem intervenção humana.
+- **Importação automática com IA**: o usuário envia planilhas (Excel/CSV), PDFs ou fotos de fichas e a Aupipet lê, organiza e cadastra tutores, pets, vacinas e pacotes sozinha, sem intervenção humana.
 
 ## Planos e preços
 
@@ -27,7 +27,7 @@ A Aupi é um SaaS brasileiro voltado a donos e gestores de pet negócios que pre
 
 ## Atendimento
 
-- A Aupi é 100% self-service e automatizada: não há atendimento humano, telefone, chat com pessoas ou agendamento de demonstração.
+- A Aupipet é 100% self-service e automatizada: não há atendimento humano, telefone, chat com pessoas ou agendamento de demonstração.
 - Dúvidas são resolvidas dentro do produto: tutoriais guiados no app, central de ajuda e assistente automático 24/7.
 - Cadastro e início de uso são imediatos: https://app.aupipet.com.br/comecar
 - Central de ajuda / FAQ: https://aupipet.com.br/#faq

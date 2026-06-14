@@ -34,7 +34,7 @@ Tom sempre cordial, remetente sempre o sistema com a sua marca.
 
 Inadimplência de 5% num faturamento de R$ 40 mil são R$ 2.000/mês — R$ 24 mil/ano — financiados do seu bolso, sem juros, para quem atrasou. Nenhum negócio de margem apertada aguenta ser banco.
 
-Na Aupi, o mensalista é cadastrado com plano e vencimento, a cobrança recorrente e toda a régua saem automáticas com a sua marca, e o painel mostra quem está em dia, quem está na régua e quanto há a receber. Você volta a ser o lugar que cuida do cachorro — não o cobrador. [Teste grátis por 14 dias →](/#contato)
+Na Aupipet, o mensalista é cadastrado com plano e vencimento, a cobrança recorrente e toda a régua saem automáticas com a sua marca, e o painel mostra quem está em dia, quem está na régua e quanto há a receber. Você volta a ser o lugar que cuida do cachorro — não o cobrador. [Teste grátis por 14 dias →](/#contato)
 
 **Perguntas frequentes**
 
