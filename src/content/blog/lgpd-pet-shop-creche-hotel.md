@@ -32,7 +32,7 @@ Tudo que identifica o tutor: cadastro completo, histórico de pagamentos, conver
 
 ## Onde um sistema ajuda (e onde não)
 
-A Aulado nasce com o lado técnico resolvido: dados criptografados, backup automático, acesso por papel de usuário, registro de autorizações (incluindo a de imagem) na ficha digital e exportação/exclusão de cadastro a um clique.
+A Aupi nasce com o lado técnico resolvido: dados criptografados, backup automático, acesso por papel de usuário, registro de autorizações (incluindo a de imagem) na ficha digital e exportação/exclusão de cadastro a um clique.
 
 O que sistema nenhum faz por você: coletar o consentimento e treinar a equipe — esses dois são seus. [Teste grátis por 14 dias →](/#contato)
 

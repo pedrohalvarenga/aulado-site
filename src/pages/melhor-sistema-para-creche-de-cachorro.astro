@@ -1,0 +1,104 @@
+---
+import LandingLayout from '../layouts/LandingLayout.astro';
+
+const canonical = 'https://aupipet.com.br/melhor-sistema-para-creche-de-cachorro';
+const faqs = [
+  { q: 'Qual o melhor sistema para creche de cachorro?', a: 'O melhor sistema é o que cobre a operação real de uma creche — agenda por porte e capacidade, pacotes de diárias com saldo, cobrança recorrente automática e ficha digital — com preço claro e sem depender de atendimento. A Aupi foi feita exatamente para isso e ainda inclui white label e importação automática dos seus dados.' },
+  { q: 'Vale a pena trocar o caderno ou a planilha por um sistema?', a: 'Sim, assim que o volume cresce. Caderno e planilha não bloqueiam agendamento acima da capacidade, não cobram sozinhos e não mostram quem sumiu. Um sistema reduz faltas, organiza o caixa e libera seu tempo.' },
+  { q: 'Quanto custa a Aupi?', a: 'Os planos são públicos: Essencial R$197/mês, Profissional R$397/mês e Escala R$697/mês, todos com 14 dias grátis sem cartão. Veja detalhes na página de quanto custa um sistema de gestão para pet.' },
+  { q: 'Preciso agendar uma demonstração para começar?', a: 'Não. A Aupi é self-service: você cria a conta, importa seus dados (planilha, PDF ou foto) e começa a usar na hora, sem reunião e sem vendedor.' },
+];
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    { '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+    { '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://aupipet.com.br' },
+      { '@type': 'ListItem', position: 2, name: 'Melhor sistema para creche de cachorro', item: canonical },
+    ] },
+  ],
+};
+---
+<LandingLayout
+  title="Melhor sistema para creche de cachorro em 2026 — comparativo | Aupi"
+  description="Comparativo honesto: caderno e planilha vs. sistema genérico vs. Aupi. Veja os critérios que importam numa creche de cachorro — capacidade, pacotes, cobrança e white label."
+  canonical={canonical}
+  schema={schema}
+>
+  <nav class="container crumbs"><a href="/">Início</a> › Melhor sistema para creche de cachorro</nav>
+
+  <section class="lp-hero">
+    <div class="container">
+      <span class="tag">📊 Comparativo 2026</span>
+      <h1>Melhor sistema para creche de cachorro</h1>
+      <p class="lead">Em vez de uma lista genérica, este é um comparativo honesto pelos critérios que realmente importam na operação de uma creche — e onde cada opção entrega ou deixa a desejar.</p>
+      <div class="actions">
+        <a href="https://app.aupipet.com.br/comecar" class="btn btn-primary">Testar a Aupi grátis</a>
+        <span class="note">14 dias · Sem cartão · Acesso imediato</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-section">
+    <div class="container">
+      <h2>O que avaliar antes de escolher</h2>
+      <p class="lead">Um sistema para creche precisa ir além de "agenda bonita". Estes são os critérios que separam um sistema de gestão de verdade de um caderno digital.</p>
+      <div class="lp-table-wrap">
+        <table class="lp-table">
+          <thead>
+            <tr><th>Critério</th><th>Caderno / planilha</th><th>Sistema genérico</th><th class="hl">Aupi</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Agenda por porte e capacidade</th><td class="no">Não</td><td>Parcial</td><td class="hl yes">Sim</td></tr>
+            <tr><th scope="row">Bloqueio automático no limite + lista de espera</th><td class="no">Não</td><td>Às vezes</td><td class="hl yes">Sim</td></tr>
+            <tr><th scope="row">Pacotes de diárias com saldo automático</th><td class="no">Não</td><td>Às vezes</td><td class="hl yes">Sim</td></tr>
+            <tr><th scope="row">Cobrança recorrente automática</th><td class="no">Não</td><td>Parcial</td><td class="hl yes">Sim</td></tr>
+            <tr><th scope="row">White label (a sua marca)</th><td class="no">Não</td><td class="no">Raro</td><td class="hl yes">Sim</td></tr>
+            <tr><th scope="row">Importação automática com IA (planilha/PDF/foto)</th><td class="no">Não</td><td class="no">Não</td><td class="hl yes">Sim</td></tr>
+            <tr><th scope="row">App para o tutor</th><td class="no">Não</td><td>Às vezes</td><td class="hl yes">Sim</td></tr>
+            <tr><th scope="row">Preço público e claro</th><td>—</td><td class="no">Raro</td><td class="hl yes">Sim</td></tr>
+            <tr><th scope="row">Começar sozinho, sem reunião</th><td class="yes">Sim</td><td class="no">Raro</td><td class="hl yes">Sim</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.85rem;color:#777;margin-top:0.75rem;">Comparativo por categoria de solução (não cita concorrentes específicos). "Parcial" e "às vezes" refletem que a entrega varia bastante entre produtos genéricos.</p>
+    </div>
+  </section>
+
+  <section class="lp-section alt">
+    <div class="container">
+      <h2>Por que a Aupi se destaca</h2>
+      <ul class="checks">
+        <li><strong>Feita para o pet negócio:</strong> capacidade por porte, pacotes e régua de cobrança vêm prontos, sem gambiarra.</li>
+        <li><strong>A sua marca, não a nossa:</strong> white label no painel, nas páginas do tutor e nos e-mails.</li>
+        <li><strong>Migração automática:</strong> a IA lê suas planilhas, PDFs e fotos e cadastra tutores e pets sozinha.</li>
+        <li><strong>Preço transparente:</strong> você sabe quanto paga antes de começar — sem "fale com vendas".</li>
+        <li><strong>Self-service de verdade:</strong> conta criada, dados importados e operação rodando no mesmo dia.</li>
+      </ul>
+      <div class="lp-related">
+        <a href="/creche-de-cachorro">Sistema para creche de cachorro</a>
+        <a href="/quanto-custa-um-sistema-de-gestao-para-pet">Quanto custa</a>
+        <a href="/blog/capacidade-ideal-creche-de-cachorro">Capacidade ideal da creche</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-section">
+    <div class="container lp-faq">
+      <h2>Perguntas frequentes</h2>
+      {faqs.map(f => (
+        <details><summary>{f.q}</summary><p>{f.a}</p></details>
+      ))}
+    </div>
+  </section>
+
+  <section class="lp-cta">
+    <div class="container inner">
+      <div>
+        <h2>Veja a Aupi funcionando na sua creche</h2>
+        <p>14 dias grátis, sem cartão. Importe seus dados e comece hoje.</p>
+      </div>
+      <a href="https://app.aupipet.com.br/comecar" class="btn">Começar teste grátis →</a>
+    </div>
+  </section>
+</LandingLayout>

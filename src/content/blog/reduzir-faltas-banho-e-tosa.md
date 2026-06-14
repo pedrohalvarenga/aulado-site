@@ -34,7 +34,7 @@ Escolha uma, escreva no seu termo de serviço e informe no momento do agendament
 
 Horário cancelado de manhã pode ser preenchido à tarde — se você souber, na hora, quem queria aquele horário. Mantenha uma lista de espera por período e dispare a oferta assim que abrir vaga. Manualmente isso é trabalhoso; num sistema, é um clique.
 
-Na Aulado, a confirmação de véspera sai sozinha, com a sua marca, para todos os agendamentos do dia seguinte; a resposta do tutor atualiza o status na agenda; e a lista de espera avisa o próximo da fila quando abre horário. [Teste grátis por 14 dias e meça a queda nas suas faltas →](/#contato)
+Na Aupi, a confirmação de véspera sai sozinha, com a sua marca, para todos os agendamentos do dia seguinte; a resposta do tutor atualiza o status na agenda; e a lista de espera avisa o próximo da fila quando abre horário. [Teste grátis por 14 dias e meça a queda nas suas faltas →](/#contato)
 
 **Perguntas frequentes**
 

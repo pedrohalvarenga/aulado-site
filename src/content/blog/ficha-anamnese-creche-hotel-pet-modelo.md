@@ -37,7 +37,7 @@ Alimentação (marca, quantidade, horários — em hospedagem, mudança de raç�
 
 ## Papel ou digital?
 
-Papel se perde, fica na gaveta da unidade e ninguém acha a alergia do Thor às 19h de um sábado. Na Aulado, a ficha é digital, o tutor preenche pelo link antes do primeiro dia, os anexos (vacinas) ficam no cadastro, e alergias e medicações aparecem em destaque no check-in para toda a equipe. [Teste grátis e digitalize suas fichas em uma tarde →](/#contato)
+Papel se perde, fica na gaveta da unidade e ninguém acha a alergia do Thor às 19h de um sábado. Na Aupi, a ficha é digital, o tutor preenche pelo link antes do primeiro dia, os anexos (vacinas) ficam no cadastro, e alergias e medicações aparecem em destaque no check-in para toda a equipe. [Teste grátis e digitalize suas fichas em uma tarde →](/#contato)
 
 📥 **Baixe o modelo de ficha em PDF** — pronto para imprimir ou adaptar. [Solicite pelo formulário →](/#contato)
 

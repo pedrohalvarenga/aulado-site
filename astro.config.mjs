@@ -2,6 +2,6 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://aulado.com.br',
+  site: 'https://aupipet.com.br',
   integrations: [sitemap()],
 });

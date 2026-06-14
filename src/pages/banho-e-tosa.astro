@@ -1,0 +1,93 @@
+---
+import LandingLayout from '../layouts/LandingLayout.astro';
+
+const canonical = 'https://aupipet.com.br/banho-e-tosa';
+const faqs = [
+  { q: 'A Aupi reduz faltas no banho e tosa?', a: 'Sim. A confirmação de véspera sai sozinha, com a sua marca, para todos os agendamentos do dia seguinte; a resposta do tutor atualiza o status na agenda e a lista de espera avisa o próximo da fila quando abre horário.' },
+  { q: 'Dá para vender pacotes de banho?', a: 'Sim. Você cria pacotes, o saldo é debitado a cada atendimento e o aviso de vencimento e recompra sai automático.' },
+  { q: 'Tem histórico por pet?', a: 'Sim. Cada pet tem o histórico de atendimentos, preferências de tosa e observações, acessível para toda a equipe.' },
+  { q: 'Consigo migrar minha agenda atual?', a: 'Sim, automaticamente: envie planilha (Excel/CSV), PDF ou foto das fichas e a Aupi lê, organiza e cadastra tutores e pets. Você só confere e confirma.' },
+];
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    { '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+    { '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://aupipet.com.br' },
+      { '@type': 'ListItem', position: 2, name: 'Banho e tosa', item: canonical },
+    ] },
+  ],
+};
+---
+<LandingLayout
+  title="Software para banho e tosa — agenda, lembretes e pacotes | Aupi"
+  description="Aupi é o software para banho e tosa: agenda, confirmação de véspera que reduz faltas, pacotes, histórico por pet e cobrança automática — com a sua marca. Teste 14 dias grátis."
+  canonical={canonical}
+  schema={schema}
+>
+  <nav class="container crumbs"><a href="/">Início</a> › Banho e tosa</nav>
+
+  <section class="lp-hero">
+    <div class="container">
+      <span class="tag">✂️ Para banho e tosa</span>
+      <h1>Software para banho e tosa</h1>
+      <p class="lead">Agenda cheia e menos faltas: confirmação automática na véspera, pacotes, histórico por pet e cobrança — tudo com a identidade visual do seu negócio.</p>
+      <div class="actions">
+        <a href="https://app.aupipet.com.br/comecar" class="btn btn-primary">Começar teste grátis de 14 dias</a>
+        <span class="note">Sem cartão · Sem compromisso · Acesso imediato</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-section">
+    <div class="container">
+      <h2>Menos faltas, mais agenda cheia</h2>
+      <p class="lead">O sistema trabalha por você antes, durante e depois do atendimento.</p>
+      <div class="lp-grid">
+        <div class="lp-card"><span class="ico">🔔</span><h3>Confirmação de véspera</h3><p>Lembrete automático no dia anterior, com a sua marca. A resposta do tutor atualiza o status na agenda.</p></div>
+        <div class="lp-card"><span class="ico">📅</span><h3>Agenda inteligente</h3><p>Horários organizados, lista de espera que avisa o próximo da fila e menos buracos na agenda.</p></div>
+        <div class="lp-card"><span class="ico">📦</span><h3>Pacotes de banho</h3><p>Venda pacotes, debite o saldo a cada atendimento e deixe o aviso de recompra sair sozinho.</p></div>
+        <div class="lp-card"><span class="ico">🐶</span><h3>Histórico por pet</h3><p>Preferências de tosa, observações e atendimentos anteriores acessíveis para toda a equipe.</p></div>
+        <div class="lp-card"><span class="ico">💳</span><h3>Cobrança automática</h3><p>Avulsos e pacotes com cobrança e régua de inadimplência. Você para de cobrar na mão.</p></div>
+        <div class="lp-card"><span class="ico">📊</span><h3>Relatórios</h3><p>Faturamento por serviço, ticket médio, faltas e clientes inativos — prontos, sem planilha.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-section alt">
+    <div class="container">
+      <h2>Comece hoje, com o que você já tem</h2>
+      <p class="lead">Sem digitar tudo de novo e sem depender de ninguém.</p>
+      <ul class="checks">
+        <li>Importação automática: planilha, PDF ou foto das fichas viram cadastros de tutores e pets.</li>
+        <li>White label completo: logo, cores e nome do seu negócio em tudo que o tutor vê.</li>
+        <li>App do tutor para agendar, ver histórico e comprovantes.</li>
+        <li>100% self-service: configure em minutos, sem reunião e sem esperar atendimento.</li>
+      </ul>
+      <div class="lp-related">
+        <a href="/blog/reduzir-faltas-banho-e-tosa">Como reduzir faltas</a>
+        <a href="/blog/pacotes-de-diarias-como-montar-e-precificar">Como montar pacotes</a>
+        <a href="/blog/como-fidelizar-tutores-creche-cachorro">Como fidelizar clientes</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-section">
+    <div class="container lp-faq">
+      <h2>Perguntas frequentes</h2>
+      {faqs.map(f => (
+        <details><summary>{f.q}</summary><p>{f.a}</p></details>
+      ))}
+    </div>
+  </section>
+
+  <section class="lp-cta">
+    <div class="container inner">
+      <div>
+        <h2>Encha a agenda do seu banho e tosa</h2>
+        <p>14 dias grátis, sem cartão. Configuração em menos de 15 minutos.</p>
+      </div>
+      <a href="https://app.aupipet.com.br/comecar" class="btn">Começar teste grátis →</a>
+    </div>
+  </section>
+</LandingLayout>

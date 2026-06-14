@@ -36,7 +36,7 @@ Não é venda agressiva — é conveniência. A vaga garantida é o argumento pr
 
 Três coisas: acidente que não foi comunicado, cobrança errada sem resolução rápida, e sentir que o cão é número. Todas têm solução operacional. O sistema certo garante que a comunicação aconteça, o financeiro feche certo e a equipe tenha contexto sobre cada animal.
 
-Na Aulado, o histórico do pet — temperamento, preferências, incidentes — fica no cadastro acessível para toda a equipe. O relatório do dia pode ser enviado com um toque. E o tutor recebe atualizações com a cara da sua marca, não de um app genérico. [Teste grátis por 14 dias →](/#contato)
+Na Aupi, o histórico do pet — temperamento, preferências, incidentes — fica no cadastro acessível para toda a equipe. O relatório do dia pode ser enviado com um toque. E o tutor recebe atualizações com a cara da sua marca, não de um app genérico. [Teste grátis por 14 dias →](/#contato)
 
 **Perguntas frequentes**
 

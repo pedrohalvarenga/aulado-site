@@ -15,7 +15,7 @@ const {
   schema,
 } = Astro.props;
 
-const siteUrl = 'https://aulado.com.br';
+const siteUrl = 'https://aupipet.com.br';
 const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 ---
 
@@ -36,7 +36,7 @@ const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}
     <meta property="og:description" content={description} />
     <meta property="og:image" content={fullOgImage} />
     <meta property="og:locale" content="pt_BR" />
-    <meta property="og:site_name" content="Aulado" />
+    <meta property="og:site_name" content="Aupi" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -52,15 +52,29 @@ const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <!-- Schema.org JSON-LD base -->
+    <!-- Schema.org JSON-LD base (Organization + WebSite) -->
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Aulado",
-      "url": siteUrl,
-      "logo": `${siteUrl}/logo.svg`,
-      "contactPoint": { "@type": "ContactPoint", "contactType": "customer support", "email": "oi@aulado.com.br" },
-      "sameAs": ["https://instagram.com/auladoapp"]
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": `${siteUrl}/#org`,
+          "name": "Aupi",
+          "url": siteUrl,
+          "logo": `${siteUrl}/logo.svg`,
+          "description": "Sistema de gestão para creche de cachorro, hotel pet e banho e tosa, com white label e importação automática de dados.",
+          "contactPoint": { "@type": "ContactPoint", "contactType": "technical support", "url": `${siteUrl}/#faq`, "availableLanguage": "Portuguese" },
+          "sameAs": ["https://instagram.com/Aupiapp"]
+        },
+        {
+          "@type": "WebSite",
+          "@id": `${siteUrl}/#website`,
+          "url": siteUrl,
+          "name": "Aupi",
+          "publisher": { "@id": `${siteUrl}/#org` },
+          "inLanguage": "pt-BR"
+        }
+      ]
     })} />
 
     {schema && (

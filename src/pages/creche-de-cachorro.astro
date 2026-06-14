@@ -1,0 +1,94 @@
+---
+import LandingLayout from '../layouts/LandingLayout.astro';
+
+const canonical = 'https://aupipet.com.br/creche-de-cachorro';
+const faqs = [
+  { q: 'A Aupi controla a capacidade da creche por porte?', a: 'Sim. Você define a capacidade por porte e por período, e o sistema bloqueia automaticamente o agendamento quando atinge o limite — além de manter uma lista de espera trabalhando por você.' },
+  { q: 'Como funcionam os pacotes de diárias?', a: 'Você vende o pacote, cada check-in debita o saldo sozinho, o tutor recebe o extrato e o aviso de "restam X diárias" sai automático com link de recompra. O vencimento é aplicado sem você precisar cobrar.' },
+  { q: 'Dá para migrar os cães e tutores que já tenho?', a: 'Sim, e de forma automática: você envia planilha (Excel/CSV), PDF ou foto das fichas e a inteligência da Aupi lê, organiza e cadastra tutores, pets e pacotes. Você só confere e confirma.' },
+  { q: 'Preciso de cartão para testar?', a: 'Não. São 14 dias grátis, sem cartão e sem compromisso. Você só paga se decidir continuar.' },
+];
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    { '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+    { '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://aupipet.com.br' },
+      { '@type': 'ListItem', position: 2, name: 'Creche de cachorro', item: canonical },
+    ] },
+  ],
+};
+---
+<LandingLayout
+  title="Sistema para creche de cachorro — agenda, pacotes e cobrança | Aupi"
+  description="Aupi é o sistema de gestão para creche de cachorro: agenda por porte, check-in/out, pacotes de diárias, ficha digital e cobrança automática — com a sua marca. Teste 14 dias grátis."
+  canonical={canonical}
+  schema={schema}
+>
+  <nav class="container crumbs"><a href="/">Início</a> › Creche de cachorro</nav>
+
+  <section class="lp-hero">
+    <div class="container">
+      <span class="tag">🐾 Para creches de cachorro</span>
+      <h1>Sistema para creche de cachorro</h1>
+      <p class="lead">Organize agenda, vagas por porte, pacotes de diárias, fichas e cobrança da sua creche em um só lugar — com a identidade visual do seu negócio e sem depender de caderno ou WhatsApp.</p>
+      <div class="actions">
+        <a href="https://app.aupipet.com.br/comecar" class="btn btn-primary">Começar teste grátis de 14 dias</a>
+        <span class="note">Sem cartão · Sem compromisso · Acesso imediato</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-section">
+    <div class="container">
+      <h2>Tudo que a sua creche precisa em um lugar só</h2>
+      <p class="lead">Feito com quem opera creche de verdade — sem funcionalidade de enfeite.</p>
+      <div class="lp-grid">
+        <div class="lp-card"><span class="ico">📅</span><h3>Agenda por porte e capacidade</h3><p>Controle de vagas por porte, bloqueio automático no limite, lista de espera e confirmação na véspera.</p></div>
+        <div class="lp-card"><span class="ico">✅</span><h3>Check-in e check-out</h3><p>Registre presença em segundos e saiba a qualquer momento quantos cães estão na creche hoje.</p></div>
+        <div class="lp-card"><span class="ico">📦</span><h3>Pacotes de diárias</h3><p>Venda, controle de saldo e aviso automático de vencimento. O sistema debita, avisa o tutor e gera a recompra.</p></div>
+        <div class="lp-card"><span class="ico">🐶</span><h3>Ficha digital completa</h3><p>Saúde, vacinação, comportamento, rotina e autorizações — acessíveis para toda a equipe, em tempo real.</p></div>
+        <div class="lp-card"><span class="ico">💳</span><h3>Cobrança recorrente</h3><p>Mensalistas e pacotes com cobrança automática e régua de inadimplência. Você para de cobrar na mão.</p></div>
+        <div class="lp-card"><span class="ico">📊</span><h3>Relatórios em tempo real</h3><p>Ocupação, faturamento, faltas, inativos e previsão de caixa — prontos, sem montar planilha.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-section alt">
+    <div class="container">
+      <h2>Saia do caderno sem dor de cabeça</h2>
+      <p class="lead">A migração é automática: envie o que você já tem e a Aupi cuida do resto.</p>
+      <ul class="checks">
+        <li>Importe tutores e cães de planilha (Excel/CSV), PDF ou foto das fichas — a IA lê e cadastra sozinha.</li>
+        <li>Capacidade configurada por porte e período, com bloqueio automático e lista de espera.</li>
+        <li>White label: logo, cores e nome do seu negócio no painel, nas páginas do tutor e nos e-mails.</li>
+        <li>Tudo self-service: configure em minutos, sem reunião e sem esperar atendimento.</li>
+      </ul>
+      <div class="lp-related">
+        <a href="/blog/capacidade-ideal-creche-de-cachorro">Capacidade ideal da creche</a>
+        <a href="/blog/como-precificar-servicos-creche-pet">Como precificar</a>
+        <a href="/blog/como-fidelizar-tutores-creche-cachorro">Como fidelizar tutores</a>
+        <a href="/blog/como-cobrar-mensalistas-pet">Como cobrar mensalistas</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-section">
+    <div class="container lp-faq">
+      <h2>Perguntas frequentes</h2>
+      {faqs.map(f => (
+        <details><summary>{f.q}</summary><p>{f.a}</p></details>
+      ))}
+    </div>
+  </section>
+
+  <section class="lp-cta">
+    <div class="container inner">
+      <div>
+        <h2>Comece sua creche organizada hoje</h2>
+        <p>14 dias grátis, sem cartão. Configuração em menos de 15 minutos.</p>
+      </div>
+      <a href="https://app.aupipet.com.br/comecar" class="btn">Começar teste grátis →</a>
+    </div>
+  </section>
+</LandingLayout>

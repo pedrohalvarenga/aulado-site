@@ -1,0 +1,109 @@
+---
+import LandingLayout from '../layouts/LandingLayout.astro';
+
+const canonical = 'https://aupipet.com.br/quanto-custa-um-sistema-de-gestao-para-pet';
+const faqs = [
+  { q: 'Quanto custa um sistema de gestão para pet?', a: 'Na Aupi os preços são públicos: Essencial R$197/mês, Profissional R$397/mês (white label) e Escala R$697/mês (multiunidades). Todos têm 14 dias grátis sem cartão, e o plano anual sai com 2 meses grátis.' },
+  { q: 'Tem taxa de instalação ou de migração?', a: 'Não. A migração dos seus dados é automática e sem custo adicional: você envia planilha, PDF ou foto e a IA cadastra tutores, pets e pacotes.' },
+  { q: 'Preciso de cartão para testar?', a: 'Não. São 14 dias grátis, sem cartão e sem compromisso. Você só paga se decidir continuar.' },
+  { q: 'O que muda entre os planos?', a: 'O Essencial cobre 1 unidade e o essencial da operação. O Profissional adiciona white label completo, usuários ilimitados e subdomínio próprio. O Escala adiciona múltiplas unidades, painel consolidado e API.' },
+  { q: 'Existe desconto no plano anual?', a: 'Sim. No plano anual você paga 10 meses e usa 12 — equivale a 2 meses grátis por ano.' },
+];
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    { '@type': 'FAQPage', mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+    { '@type': 'BreadcrumbList', itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://aupipet.com.br' },
+      { '@type': 'ListItem', position: 2, name: 'Quanto custa', item: canonical },
+    ] },
+  ],
+};
+---
+<LandingLayout
+  title="Quanto custa um sistema de gestão para pet? Preços Aupi (2026)"
+  description="Preços claros, sem 'fale com vendas': Essencial R$197, Profissional R$397 e Escala R$697 por mês, com 14 dias grátis. Veja o que está incluído e o que afeta o custo."
+  canonical={canonical}
+  schema={schema}
+>
+  <nav class="container crumbs"><a href="/">Início</a> › Quanto custa</nav>
+
+  <section class="lp-hero">
+    <div class="container">
+      <span class="tag">💰 Preços transparentes</span>
+      <h1>Quanto custa um sistema de gestão para pet?</h1>
+      <p class="lead">Resposta direta: na Aupi, de <strong>R$197 a R$697 por mês</strong>, com 14 dias grátis e sem cartão. Sem taxa de instalação e sem "fale com vendas". Abaixo, o que cada plano inclui e o que faz o preço variar.</p>
+      <div class="actions">
+        <a href="https://app.aupipet.com.br/comecar" class="btn btn-primary">Começar teste grátis</a>
+        <span class="note">14 dias · Sem cartão · Acesso imediato</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-section">
+    <div class="container">
+      <h2>Os planos da Aupi</h2>
+      <p class="lead">Preço por negócio (não por pet). Plano anual com 2 meses grátis.</p>
+      <div class="lp-grid">
+        <div class="lp-card">
+          <h3>Essencial — R$197/mês</h3>
+          <p>1 unidade e 2 usuários. Agenda e check-in/out, ficha digital, pacotes, relatórios básicos e cobrança recorrente. Ideal para começar a organizar.</p>
+        </div>
+        <div class="lp-card">
+          <h3>Profissional — R$397/mês</h3>
+          <p>Tudo do Essencial + white label completo, usuários ilimitados, subdomínio próprio e relatórios avançados. O mais popular.</p>
+        </div>
+        <div class="lp-card">
+          <h3>Escala — R$697/mês</h3>
+          <p>Tudo do Profissional + múltiplas unidades, painel consolidado, API e integrações. Para redes e operações maiores.</p>
+        </div>
+      </div>
+      <p style="margin-top:1.25rem;"><a href="/#planos">Ver os planos completos na home →</a></p>
+    </div>
+  </section>
+
+  <section class="lp-section alt">
+    <div class="container">
+      <h2>O que faz o preço variar</h2>
+      <ul class="checks">
+        <li><strong>White label:</strong> ter o sistema com a sua marca (logo, cores, domínio) está a partir do Profissional.</li>
+        <li><strong>Número de unidades:</strong> mais de uma unidade com painel consolidado é o plano Escala.</li>
+        <li><strong>Usuários da equipe:</strong> o Essencial tem 2 usuários; Profissional e Escala são ilimitados.</li>
+        <li><strong>Período de pagamento:</strong> no anual você ganha 2 meses (paga 10, usa 12).</li>
+        <li><strong>Migração:</strong> não custa nada — a importação dos seus dados é automática e incluída.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="lp-section">
+    <div class="container">
+      <h2>Vale o investimento?</h2>
+      <p>Um único mensalista recuperado da inadimplência, ou algumas faltas evitadas com a confirmação automática, já costumam pagar a mensalidade. Some o tempo que você deixa de gastar cobrando na mão e montando planilha, e o sistema se paga rápido — além de profissionalizar a imagem do negócio com a sua marca em tudo.</p>
+      <div class="lp-related">
+        <a href="/creche-de-cachorro">Sistema para creche</a>
+        <a href="/hotel-pet">Sistema para hotel pet</a>
+        <a href="/banho-e-tosa">Software para banho e tosa</a>
+        <a href="/blog/como-cobrar-mensalistas-pet">Como cobrar mensalistas</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="lp-section alt">
+    <div class="container lp-faq">
+      <h2>Perguntas frequentes</h2>
+      {faqs.map(f => (
+        <details><summary>{f.q}</summary><p>{f.a}</p></details>
+      ))}
+    </div>
+  </section>
+
+  <section class="lp-cta">
+    <div class="container inner">
+      <div>
+        <h2>Teste grátis antes de decidir</h2>
+        <p>14 dias com o sistema completo, sem cartão e sem compromisso.</p>
+      </div>
+      <a href="https://app.aupipet.com.br/comecar" class="btn">Começar teste grátis →</a>
+    </div>
+  </section>
+</LandingLayout>

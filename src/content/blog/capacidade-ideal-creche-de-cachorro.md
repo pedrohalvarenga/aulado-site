@@ -40,7 +40,7 @@ Cada cão acima do limite degrada o serviço de todos: mais brigas, mais estress
 
 E a lista de espera é seu termômetro de expansão: lista constante de 10+ nomes é o sinal verde para segunda unidade ou ampliação — decisão que deve nascer de dado, não de empolgação.
 
-No caderno, ninguém sabe — todo dia "parece cheio". Na Aulado, o painel mostra ocupação por dia e por período contra a capacidade configurada, bloqueia agendamento acima do limite e mantém a lista de espera trabalhando por você. [Teste grátis por 14 dias →](/#contato)
+No caderno, ninguém sabe — todo dia "parece cheio". Na Aupi, o painel mostra ocupação por dia e por período contra a capacidade configurada, bloqueia agendamento acima do limite e mantém a lista de espera trabalhando por você. [Teste grátis por 14 dias →](/#contato)
 
 **Perguntas frequentes**
 

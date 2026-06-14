@@ -1,10 +1,10 @@
-# Aulado
+# Aupi
 
 > Sistema de gestão white label para creches de cachorro, hotéis pet e banho e tosa.
 
-A Aulado é um SaaS brasileiro voltado a donos e gestores de pet negócios que precisam organizar agenda, cadastro de pets, cobranças recorrentes e relatórios — tudo com a identidade visual do próprio negócio (white label).
+A Aupi é um SaaS brasileiro voltado a donos e gestores de pet negócios que precisam organizar agenda, cadastro de pets, cobranças recorrentes e relatórios — tudo com a identidade visual do próprio negócio (white label).
 
-## O que a Aulado faz
+## O que a Aupi faz
 
 - **Agenda inteligente**: controle de vagas por porte, bloqueio automático na capacidade máxima, lista de espera, confirmação automática de agendamentos.
 - **Ficha digital**: cadastro completo do pet (saúde, vacinação, comportamento, rotina, autorizações do tutor) acessível por toda a equipe.
@@ -12,6 +12,7 @@ A Aulado é um SaaS brasileiro voltado a donos e gestores de pet negócios que p
 - **Relatórios**: ocupação, faturamento por serviço, ticket médio, clientes inativos, taxa de recompra de pacotes, faltas e previsão de caixa.
 - **White label**: logo, cores e nome do negócio em todo o painel, nas páginas do tutor e nos e-mails transacionais.
 - **Múltiplas unidades**: suporte a redes com painel consolidado no plano Escala.
+- **Importação automática com IA**: o usuário envia planilhas (Excel/CSV), PDFs ou fotos de fichas e a Aupi lê, organiza e cadastra tutores, pets, vacinas e pacotes sozinha, sem intervenção humana.
 
 ## Planos e preços
 
@@ -24,16 +25,17 @@ A Aulado é um SaaS brasileiro voltado a donos e gestores de pet negócios que p
 - Trial de **14 dias gratuito** sem cartão de crédito.
 - Cupom **FUNDADOR**: R$97/mês vitalício, limitado a 10 usos.
 
-## Contato
+## Atendimento
 
-- E-mail: oi@aulado.com.br
-- Formulário: https://aulado.com.br/#contato
-- Sem atendimento por telefone.
+- A Aupi é 100% self-service e automatizada: não há atendimento humano, telefone, chat com pessoas ou agendamento de demonstração.
+- Dúvidas são resolvidas dentro do produto: tutoriais guiados no app, central de ajuda e assistente automático 24/7.
+- Cadastro e início de uso são imediatos: https://app.aupipet.com.br/comecar
+- Central de ajuda / FAQ: https://aupipet.com.br/#faq
 
 ## Páginas principais
 
-- Home / landing: https://aulado.com.br/
-- Blog: https://aulado.com.br/blog
-- Planos: https://aulado.com.br/#planos
-- Política de Privacidade: https://aulado.com.br/politica-de-privacidade
-- Termos de Uso: https://aulado.com.br/termos-de-uso
+- Home / landing: https://aupipet.com.br/
+- Blog: https://aupipet.com.br/blog
+- Planos: https://aupipet.com.br/#planos
+- Política de Privacidade: https://aupipet.com.br/politica-de-privacidade
+- Termos de Uso: https://aupipet.com.br/termos-de-uso

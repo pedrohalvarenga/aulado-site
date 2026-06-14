@@ -41,7 +41,7 @@ Termo simples assinado no ato evita 100% das discussões.
 
 É aqui que a maioria sangra. Saldo controlado em planilha ou na memória gera o clássico "acho que ainda tenho diária" — e na dúvida, o negócio sempre cede. Multiplique uma diária dada de graça por mês por todos os clientes de pacote e assuste-se.
 
-Na Aulado, cada check-in debita o saldo sozinho, o tutor recebe o extrato, o aviso de "restam 2 diárias" sai automático com link de recompra, e o vencimento é aplicado sem você precisar ser o chato. [Teste grátis e deixe o sistema ser o guardião dos seus pacotes →](/#contato)
+Na Aupi, cada check-in debita o saldo sozinho, o tutor recebe o extrato, o aviso de "restam 2 diárias" sai automático com link de recompra, e o vencimento é aplicado sem você precisar ser o chato. [Teste grátis e deixe o sistema ser o guardião dos seus pacotes →](/#contato)
 
 **Perguntas frequentes**
 
