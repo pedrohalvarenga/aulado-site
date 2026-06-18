@@ -1,0 +1,190 @@
+---
+import AdLayout from '../layouts/AdLayout.astro';
+
+const CTA = 'https://app.aupipet.com.br/comecar?utm_source=google&utm_medium=cpc&utm_campaign=pmax';
+const canonical = 'https://aupipet.com.br/comecar-gratis';
+
+const faqs = [
+  {
+    q: 'Preciso de cartão de crédito para testar?',
+    a: 'Não. O teste de 14 dias é completamente gratuito, sem cartão e sem compromisso. Você só paga se decidir continuar depois do período de teste.',
+  },
+  {
+    q: 'Quanto tempo leva para estar no ar?',
+    a: 'Menos de 15 minutos. Você cria a conta, configura o nome e a cor do seu negócio, e já pode começar a cadastrar clientes e agendar — tudo no mesmo dia.',
+  },
+  {
+    q: 'Funciona para qual tipo de petshop?',
+    a: 'Creche de cachorro, hotel pet e banho e tosa — ou qualquer combinação dos três. Você ativa só as funcionalidades que usa.',
+  },
+  {
+    q: 'E os dados que já tenho? Preciso digitar tudo de novo?',
+    a: 'Não. Envie sua planilha, PDF ou até uma foto das fichas em papel — a inteligência da Aupipet lê, organiza e cadastra automaticamente. Você só confere e confirma.',
+  },
+  {
+    q: 'O sistema fica com a minha marca ou com o nome "Aupipet"?',
+    a: 'Com a sua marca. Logo, cores e nome do seu negócio aparecem no painel, nas páginas dos tutores e nos e-mails automáticos. O cliente final nunca vê o nome "Aupipet".',
+  },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'FAQPage',
+      mainEntity: faqs.map(f => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    },
+  ],
+};
+---
+
+<AdLayout
+  title="Sistema para petshop — 14 dias grátis, sem cartão | Aupipet"
+  description="Organize agenda, cobranças e fichas do seu petshop em menos de 15 minutos. Creche, hotel pet e banho e tosa — com a sua marca. Teste grátis por 14 dias, sem cartão."
+  canonical={canonical}
+  schema={schema}
+>
+
+  <!-- HERO -->
+  <section class="ad-hero">
+    <div class="container">
+      <span class="badge">14 dias grátis · sem cartão · acesso imediato</span>
+      <h1>Organize seu petshop hoje.<br/>Em 15 minutos você já está no ar.</h1>
+      <p class="sub">Sistema completo para creche de cachorro, hotel pet e banho e tosa — agenda, cobranças, fichas e relatórios, tudo com a cara do seu negócio.</p>
+      <div class="cta-group">
+        <a href={CTA} class="btn btn-primary btn-hero">Começar teste grátis →</a>
+        <span class="fine">Sem cartão · Sem compromisso · Cancele quando quiser</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF BAR -->
+  <div class="ad-proof-bar">
+    <div class="container inner">
+      <span class="stat"><em>−68%</em> de faltas com lembretes automáticos</span>
+      <span class="stat"><em>15 min</em> para estar no ar</span>
+      <span class="stat"><em>100%</em> com a sua marca</span>
+    </div>
+  </div>
+
+  <!-- DOR -->
+  <section class="ad-pain">
+    <div class="container">
+      <h2>Reconhece alguma dessas situações?</h2>
+      <p class="sub">Se sim, você está perdendo tempo e dinheiro todo dia.</p>
+      <div class="pain-grid">
+        <div class="pain-item">
+          <span class="ico">📋</span>
+          <p>Agenda no caderno ou no WhatsApp — cliente confirma e você ainda liga para checar</p>
+        </div>
+        <div class="pain-item">
+          <span class="ico">💸</span>
+          <p>Cobranças que você esquece ou atrasa porque não tem sistema que avise automaticamente</p>
+        </div>
+        <div class="pain-item">
+          <span class="ico">🐶</span>
+          <p>Ficha do pet espalhada em papel, foto no celular e memória — impossível para a equipe consultar</p>
+        </div>
+        <div class="pain-item">
+          <span class="ico">📊</span>
+          <p>Não sabe quanto faturou no mês sem montar planilha do zero toda vez</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="ad-features">
+    <div class="container">
+      <h2>Tudo que você precisa em um só lugar</h2>
+      <p class="sub">Sem planilha, sem caderno, sem WhatsApp para agendar. Tudo integrado e automático.</p>
+      <div class="feat-grid">
+        <div class="feat-card">
+          <span class="ico">📅</span>
+          <h3>Agenda online com confirmação automática</h3>
+          <p>Seus clientes veem os horários disponíveis e confirmam sozinhos. Lembrete automático no dia anterior — zero falta sem aviso.</p>
+        </div>
+        <div class="feat-card">
+          <span class="ico">🐾</span>
+          <h3>Ficha digital completa do pet</h3>
+          <p>Raça, saúde, vacinas, comportamento e rotina — acessíveis para toda a equipe em tempo real, em qualquer dispositivo.</p>
+        </div>
+        <div class="feat-card">
+          <span class="ico">💳</span>
+          <h3>Cobrança recorrente automática</h3>
+          <p>Mensalistas e pacotes de diárias cobrados automaticamente. O sistema avisa o tutor quando o saldo está acabando e gera a recompra.</p>
+        </div>
+        <div class="feat-card">
+          <span class="ico">📦</span>
+          <h3>Pacotes e diárias com saldo</h3>
+          <p>Venda pacotes, controle o saldo por pet e envie aviso automático de vencimento. Nenhum pacote esquecido.</p>
+        </div>
+        <div class="feat-card">
+          <span class="ico">📊</span>
+          <h3>Relatórios prontos, sem montar nada</h3>
+          <p>Faturamento, ocupação, inadimplência e previsão de caixa — tudo atualizado em tempo real, sem planilha.</p>
+        </div>
+        <div class="feat-card">
+          <span class="ico">🎨</span>
+          <h3>Com a sua marca, não a nossa</h3>
+          <p>Logo, cores e nome do seu negócio no painel e nos e-mails automáticos. Seu cliente nunca vê o nome "Aupipet".</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="ad-stats">
+    <div class="container">
+      <h2>Resultados de quem já usa</h2>
+      <p class="sub">Números reais de petshops que substituíram o caderno pela Aupipet.</p>
+      <div class="stats-grid">
+        <div class="stat-box">
+          <span class="num">−68%</span>
+          <span class="label">de faltas após ativar lembretes automáticos</span>
+        </div>
+        <div class="stat-box">
+          <span class="num">15min</span>
+          <span class="label">para criar a conta e começar a usar</span>
+        </div>
+        <div class="stat-box">
+          <span class="num">100%</span>
+          <span class="label">white label — só a sua marca para o cliente</span>
+        </div>
+        <div class="stat-box">
+          <span class="num">14 dias</span>
+          <span class="label">grátis, sem cartão, sem compromisso</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="ad-faq">
+    <div class="container">
+      <h2>Perguntas frequentes</h2>
+      <div class="faq-list">
+        {faqs.map(f => (
+          <details>
+            <summary>{f.q}</summary>
+            <p>{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="ad-cta-band">
+    <div class="container">
+      <h2>Pronto para parar de perder tempo?</h2>
+      <p>14 dias grátis. Sem cartão. Configure em menos de 15 minutos.</p>
+      <a href={CTA} class="btn btn-white">Começar agora — é grátis →</a>
+    </div>
+  </section>
+
+</AdLayout>
