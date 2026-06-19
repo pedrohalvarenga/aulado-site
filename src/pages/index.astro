@@ -90,7 +90,7 @@ const FORMSPREE_ID = import.meta.env.FORMSPREE_ID || 'xyzabcde';
 <section class="hero">
   <div class="container">
     <div class="hero-content">
-      <div class="hero-badge">🐾 Cupom FUNDADOR — R$97/mês vitalício · apenas 10 vagas</div>
+      <div class="hero-badge">🐾 14 dias grátis · sem cartão · sem fidelidade</div>
       <h1>Seu pet negócio organizado.<br/>Sua marca em cada detalhe.</h1>
       <h2 class="hero-sub">Sistema de gestão para creche de cachorro, hotel pet e banho e tosa</h2>
       <p>Aupipet é o sistema que cuida da agenda, dos tutores, das cobranças e dos relatórios da sua creche, hotel pet ou banho e tosa — com a cara do seu negócio, sem complicação.</p>
@@ -291,10 +291,6 @@ const FORMSPREE_ID = import.meta.env.FORMSPREE_ID || 'xyzabcde';
         <a href="https://app.aupipet.com.br/comecar" class="btn btn-outline" style="width:100%;text-align:center;">Começar grátis</a>
       </div>
     </div>
-
-    <div class="coupon-box">
-      <strong>🏷️ Cupom FUNDADOR</strong> — R$97/mês vitalício para os primeiros 10 clientes. Informe no formulário abaixo.
-    </div>
   </div>
 </section>
 
@@ -379,10 +375,6 @@ const FORMSPREE_ID = import.meta.env.FORMSPREE_ID || 'xyzabcde';
             <option value="todos">Creche + hotel + banho e tosa</option>
           </select>
         </div>
-        <div class="form-group">
-          <label for="coupon">Cupom (opcional)</label>
-          <input type="text" id="coupon" name="coupon" placeholder="Ex: FUNDADOR" />
-        </div>
         <button type="submit" class="btn btn-primary" style="width:100%">Quero meu acesso grátis →</button>
         <p style="font-size:.8rem;opacity:.7;margin-top:.5rem;text-align:center">Você vai criar sua conta na próxima tela. Leva 1 minuto.</p>
       </form>
@@ -451,9 +443,7 @@ const FORMSPREE_ID = import.meta.env.FORMSPREE_ID || 'xyzabcde';
     const data = new FormData(form);
     const params = new URLSearchParams();
     const seg = String(data.get('segment') || '');
-    const cupom = String(data.get('coupon') || '');
     if (seg) params.set('segmento', seg);
-    if (cupom) params.set('cupom', cupom);
     const qs = params.toString();
     window.location.href = 'https://app.aupipet.com.br/comecar' + (qs ? '?' + qs : '');
   });
@@ -540,7 +530,6 @@ const FORMSPREE_ID = import.meta.env.FORMSPREE_ID || 'xyzabcde';
   .plan-annual { font-size: 0.82rem; color: var(--green); margin: 0.35rem 0 1.5rem; }
   .plan-features { list-style: none; margin-bottom: 1.75rem; }
   .plan-features li { font-size: 0.9rem; color: #444; padding: 0.35rem 0; border-bottom: 1px solid var(--sand); }
-  .coupon-box { background: #fff; border: 2px dashed var(--caramel); border-radius: 12px; padding: 1.25rem 1.75rem; text-align: center; font-size: 0.95rem; color: var(--brown); max-width: 600px; margin: 0 auto; }
 
   .faq { padding: 5rem 0; }
   .faq h2 { margin-bottom: 2.5rem; }

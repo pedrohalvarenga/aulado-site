@@ -6,7 +6,7 @@ tags: ["pets", "produtos", "comportamento"]
 readingTime: 7
 ---
 <style>
-.aupi-aff-aviso{background:var(--sand);border-left:4px solid var(--caramel);border-radius:8px;padding:.9rem 1.1rem;font-size:.9rem;color:#5a4a38;margin:0 0 2rem}
+.aupi-aff-nota{font-size:.8rem;color:#9a8c79;margin:0 0 1.6rem}
 .aupi-aff-selo{display:inline-block;background:var(--caramel);color:#fff;font-family:var(--font-title);font-weight:700;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;padding:.35rem .9rem;border-radius:99px;margin:0 0 1.2rem}
 .aupi-aff-card{background:#fff;border:1.5px solid var(--sand);border-radius:14px;padding:1.5rem;margin:0 0 1.5rem;position:relative}
 .aupi-aff-card.top{border-color:var(--caramel);box-shadow:0 10px 30px rgba(217,130,50,.14)}
@@ -28,9 +28,9 @@ readingTime: 7
 .aupi-aff-pc ul{margin:0 0 0 1.1rem;padding:0}
 .aupi-aff-pc li{margin:0 0 .25rem}
 .aupi-aff-btns{display:flex;gap:.7rem;flex-wrap:wrap}
-.aupi-aff-btn{display:inline-block;padding:.72rem 1.4rem;border-radius:8px;font-weight:600;font-size:.92rem;text-decoration:none;text-align:center;color:#fff}
-.aupi-aff-btn.amz{background:var(--caramel)}
-.aupi-aff-btn.ml{background:var(--green)}
+.aupi-aff-btn{display:inline-block;padding:.8rem 1.5rem;border-radius:8px;font-weight:700;font-size:.95rem;text-decoration:none;text-align:center}
+.aupi-aff-btn.amz{background:var(--caramel);color:#2B1F14!important}
+.aupi-aff-btn.ml{background:var(--green);color:#fff!important}
 .aupi-aff-btn:hover{opacity:.9;text-decoration:none}
 .aupi-aff-table{width:100%;border-collapse:collapse;margin:1rem 0 2rem;font-size:.86rem}
 .aupi-aff-table th,.aupi-aff-table td{border:1px solid var(--sand);padding:.55rem .65rem;text-align:left;vertical-align:top}
@@ -38,10 +38,9 @@ readingTime: 7
 .aupi-aff-table tr:nth-child(even){background:var(--cream)}
 .aupi-aff-rec{background:var(--brown);color:#f3e9da;border-radius:14px;padding:1.6rem 1.7rem;margin:2rem 0}
 .aupi-aff-rec h2{color:#fff!important;margin:0 0 .6rem!important}
-.aupi-aff-rec strong{color:var(--caramel)}
+.aupi-aff-rec strong{color:var(--caramel)!important}
 @media(max-width:560px){.aupi-aff-img{flex-basis:100%;width:100%;height:170px}.aupi-aff-btn{flex:1}}
 </style>
-<p class="aupi-aff-aviso">🐾 <strong>Aviso de afiliado:</strong> este post contém links de afiliado (Amazon e Mercado Livre). Se você comprar por eles, paga exatamente o mesmo preço e a Aupipet pode receber uma pequena comissão — é assim que mantemos o blog no ar. Recomendamos só o que realmente faz sentido para o dia a dia do seu pet.</p>
 <span class="aupi-aff-selo">★ Top 5 · 2026</span>
 <p>Brinquedo bom não é luxo: é o que gasta energia, ocupa a cabeça e evita que o sofá vire vítima. Cão entediado destrói, late e fica ansioso. Separamos os 5 brinquedos de 2026 que mais entretêm — do mordedor à prova de mandíbula forte ao tapete lambe-lambe que acalma. Todos com ótima avaliação de quem já comprou.</p>
 <div class="aupi-aff-card top">
